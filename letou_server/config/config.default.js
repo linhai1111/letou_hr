@@ -14,13 +14,13 @@ module.exports = appInfo => {
 
 
   // 安全设置
-  config.security= {
+  config.security = {
     // 关闭了csrf防御  如果开启，则每个post请求 都必须携带 ctx.csrf_token 参数
     csrf: {
       enable: false,
     },
 
-  }
+  };
 
   config.mysql = {
     // 单数据库信息配置
@@ -43,12 +43,15 @@ module.exports = appInfo => {
   };
 
 
-
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1558015448377_9203';
 
   // add your middleware config here
-  config.middleware = [];
+  // 这里添加的中间件为全局中间件 每个请求 都会触发
+  config.middleware = [
+
+  ];
+
 
   // add your user config here
   const userConfig = {

@@ -1,4 +1,4 @@
-const jwt = require("josnwebtoken");
+const jwt = require("jsonwebtoken");
 // 加密盐
 const pass_str = "rb3q19gh0o1ijlyk";
 
