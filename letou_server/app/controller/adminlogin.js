@@ -7,8 +7,12 @@ class AdminLoginController extends Controller {
     const { ctx } = this;
     ctx.body = 'login';
     const {mysql} = this.app;
-    let res  =  await mysql.get("admin_user");
+    let res  =  await mysql.get("letou_admin_user");
     console.log(res)
+  }
+
+  async test(){
+    this.ctx.body = "test"
   }
 }
 
