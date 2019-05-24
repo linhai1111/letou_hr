@@ -11,6 +11,7 @@ let mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
 const Controller = require('egg').Controller;
 
 class CommonController extends Controller {
+  // 生成图片上传凭证
   async upload_token() {
     let {ctx} = this;
 

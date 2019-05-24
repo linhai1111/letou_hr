@@ -52,6 +52,16 @@ module.exports = appInfo => {
 
   ];
 
+  // 设置跨域访问
+  config.cors = {
+    // 来源设置所有允许 也可针对 对应IP地址 设置允许
+    origin: '*',
+    // 允许的请求方式
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
+    allowHeaders: '*'
+
+  };
+
 
   // add your user config here
   const userConfig = {

@@ -1,10 +1,10 @@
 'use strict';
 
 const Controller = require('egg').Controller;
-const crypto = require('../tools/crypto.js');
-const jwt = require('../tools/jwt.js');
+const crypto = require('../../tools/crypto.js');
+const jwt = require('../../tools/jwt.js');
 
-class AdminLoginController extends Controller {
+class LoginController extends Controller {
   // 登录
   async login() {
     const { ctx } = this;
@@ -76,7 +76,7 @@ class AdminLoginController extends Controller {
             };
           } else {
             this.ctx.body = {
-              code: 8004,
+              code: 9999,
               msg: '修改失败，未知错误'
             };
           }
@@ -113,7 +113,8 @@ class AdminLoginController extends Controller {
       nickname:db_res.nickname,
       power:db_res.power,
       create_time:db_res.create_time,
-      login_time:db_res.login_time
+      login_time:db_res.login_time,
+      user_img:db_res.user_img
     };
     ctx.body = {
       code:200,
@@ -131,4 +132,4 @@ class AdminLoginController extends Controller {
   }
 }
 
-module.exports = AdminLoginController;
+module.exports = LoginController;
