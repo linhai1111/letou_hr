@@ -5,7 +5,7 @@ let accessKey = 'yGR6qoHUWr1tFwhbbEcj5fC8BdZEWNQi_WvjsK_X';
 
 let secretKey = 'l--3u7m29MY6eNdP8nrekblx-czapxeyhYGSBllB';
 
-// let mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
+let mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
 
 
 const Controller = require('egg').Controller;

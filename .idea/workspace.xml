@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb633b77-7657-462c-ad55-c657d7cb7a82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/letou_server/app/tools/crypto.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/letou_server/app/controller/adminlogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/letou_server/app/controller/adminlogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/letou_server/app/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/letou_server/app/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/letou_server/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/letou_server/app/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/letou_server/app/tools/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/letou_server/app/tools/jwt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/letou_server/app/controller/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/letou_server/app/controller/common.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,58 +19,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/letou_server/app/controller/adminlogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/letou_server/app/tools/crypto.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="17">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/letou_server/app/tools/jwt.js">
+        <entry file="file://$PROJECT_DIR$/letou_server/app/controller/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/letou_server/app/middleware/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/letou_server/app/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/letou_server/config/config.default.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/letou_server/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -91,6 +53,7 @@
         <option value="$PROJECT_DIR$/letou_server/app/controller/adminlogin.js" />
         <option value="$PROJECT_DIR$/letou_server/app/middleware/auth.js" />
         <option value="$PROJECT_DIR$/letou_server/app/tools/jwt.js" />
+        <option value="$PROJECT_DIR$/letou_server/app/controller/common.js" />
       </list>
     </option>
   </component>
@@ -122,6 +85,13 @@
               <item name="letou_hr" type="462c0819:PsiDirectoryNode" />
               <item name="letou_server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="letou_hr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="letou_hr" type="462c0819:PsiDirectoryNode" />
+              <item name="letou_server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="letou_hr" type="b2602c69:ProjectViewProjectNode" />
@@ -201,18 +171,19 @@
       <updated>1558591736952</updated>
       <workItem from="1558591738163" duration="60000" />
       <workItem from="1558592152823" duration="6362000" />
-      <workItem from="1558614213114" duration="5023000" />
+      <workItem from="1558614213114" duration="6580000" />
+      <workItem from="1558671601707" duration="86000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11445000" />
+    <option name="totallyTimeSpent" value="13088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="847" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16902314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17095116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -227,8 +198,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="3" side_tool="true" weight="0.18806162" />
-      <window_info active="true" anchor="right" id="Run" order="4" visible="true" weight="0.28727508" />
+      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.50143266" side_tool="true" visible="true" weight="0.28727508" />
+      <window_info anchor="right" id="Run" order="4" sideWeight="0.49856734" visible="true" weight="0.28727508" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +211,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/letou_server/app/middleware/auth.js</url>
           <line>23</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -249,7 +219,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/letou_server/config/config.default.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="83">
           <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -259,36 +229,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/letou_server/app/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="187">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/letou_server/app/middleware/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="268">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/letou_server/app/tools/crypto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/letou_server/app/controller/adminlogin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/letou_server/app/tools/jwt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/letou_server/app/tools/crypto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/letou_server/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/letou_server/app/controller/adminlogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/letou_server/app/controller/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
