@@ -6,12 +6,12 @@ module.exports = {
     // 加密
     encode(data){
         return  jwt.sign({
-            exp: Math.floor(Date.now() / 1000) + (60 * 60),
+            exp: Math.floor(Date.now() / 1000) + 60*60*24,
             data
         },pass_str)
     },
     // 解密
     decode(data){
-        return jwt.verify(data);
+        return jwt.verify(data,pass_str);
     }
 }
