@@ -49,6 +49,14 @@ module.exports = app => {
   // 删除行业分类
   router.del('/api/v1/admin/del_trade',auth, controller.admin.trade.del);
 
+  // 福利列表
+  router.get('/api/v1/admin/get_welfare_list', controller.admin.welfare.get_list);
+
+  // 添加福利
+  router.post('/api/v1/admin/add_welfare',auth, controller.admin.welfare.add);
+
+  // 删除福利
+  router.del('/api/v1/admin/del_welfare',auth, controller.admin.welfare.del);
 
   /* =======================公共部分========================= */
   // 获取七牛云上传图片凭证

@@ -24,15 +24,18 @@ class TradeController extends Controller {
       },
     });
     for (let i = 0; i < res1.length; i++) {
-      res1[i].child = [];
+      res1[i].children = [];
+      res1[i].label = res1[i].title;
       for (let j = 0; j < res2.length; j++) {
-        res2[j].child =[];
+        res2[j].children =[];
+        res2[j].label = res2[j].title;
         if (res1[i].id === res2[j].p_id) {
-          res1[i].child .push(res2[j]);
+          res1[i].children .push(res2[j]);
         }
         for(let k=0;k<res3.length;k++){
+          res3[k].label = res3[k].title;
           if(res2[j].id === res3[k].p_id){
-            res2[j].child.push(res3[k])
+            res2[j].children.push(res3[k])
 
           }
         }
@@ -50,9 +53,12 @@ class TradeController extends Controller {
   async add() {
     let { ctx } = this;
 
-    let title = ctx.request.body.title;
+    let params = this.ctx.request.body;
+    console.log(params)
+    let table_name = 'letou_company_trade' + params.lv;
+    let title = params.title;
     if (title) {
-      let is_succ = await this.app.mysql.insert('letou_company_trade', { title });
+      let is_succ = await this.app.mysql.insert(table_name, { title,p_id:params.p_id });
 
       if (is_succ.affectedRows === 1) {
         ctx.body = {
@@ -78,7 +84,7 @@ class TradeController extends Controller {
 
   async del() {
     let { ctx } = this;
-
+    let params = ctx.request.body;
     let id = ctx.request.body.id;
     if (!id) {
       ctx.body = {
@@ -88,7 +94,16 @@ class TradeController extends Controller {
       return;
     }
 
-    let is_succ = await this.app.mysql.update('letou_company_trade', { id, del: 1 });
+    if(!params.lv){
+      ctx.body = {
+        code: 4001,
+        msg: '缺少参数lv'
+      };
+      return ;
+    }
+
+    let table_name = 'letou_company_trade' + params.lv;
+    let is_succ = await this.app.mysql.update(table_name, { id, del: 1 });
     if (is_succ.affectedRows === 1) {
       ctx.body = {
         code: 200,

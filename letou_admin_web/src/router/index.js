@@ -42,7 +42,7 @@ export const constantRoutes = [
     component: () => import('@/views/404'),
     hidden: true
   },
-
+  // 首页控制台
   {
     path: '/',
     component: Layout,
@@ -54,7 +54,7 @@ export const constantRoutes = [
       meta: { title: '控制台', icon: 'dashboard' }
     }]
   },
-
+  // 上传图片
   {
     path: '/upload',
     component: Layout,
@@ -67,8 +67,7 @@ export const constantRoutes = [
       }
     ]
   },
-
-
+  // 兼职管理
   {
     path: '/part_time_job',
     component: Layout,
@@ -90,6 +89,7 @@ export const constantRoutes = [
       }
     ]
   },
+  // 示例
   {
     path: '/example',
     component: Layout,
@@ -111,7 +111,41 @@ export const constantRoutes = [
       }
     ]
   },
-
+  // 设置
+  {
+    path: '/setting',
+    component: Layout,
+    redirect: '/setting/welfare_list',
+    name: 'setting',
+    meta: { title: '设置', icon: 'tree' },
+    children: [
+      {
+        path: '/welfare_list',
+        name: 'welfare_list',
+        component: () => import('@/views/setting/welfare'),
+        meta: { title: '福利', icon: 'table' }
+      },
+      {
+        path: '/property',
+        name: 'property',
+        component: () => import('@/views/setting/property'),
+        meta: { title: '企业性质', icon: 'table' }
+      },
+      {
+        path: '/scale',
+        name: 'scale',
+        component: () => import('@/views/setting/scale'),
+        meta: { title: '企业规模', icon: 'table' }
+      },
+      {
+        path: '/trade',
+        name: 'trade',
+        component: () => import('@/views/setting/trade'),
+        meta: { title: '行业管理', icon: 'tree' }
+      }
+    ]
+  },
+  // 表单
   {
     path: '/form',
     component: Layout,
@@ -124,7 +158,7 @@ export const constantRoutes = [
       }
     ]
   },
-
+  // 多层菜单
   {
     path: '/nested',
     component: Layout,
@@ -182,7 +216,7 @@ export const constantRoutes = [
       }
     ]
   },
-
+  // 扩展菜单，跳转第三方链接
   {
     path: 'external-link',
     component: Layout,
