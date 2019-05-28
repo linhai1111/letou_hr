@@ -158,6 +158,19 @@ export const constantRoutes = [
       }
     ]
   },
+  // 富文本
+  {
+    path: '/rich_text',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'rich_text',
+        component: () => import('@/views/rich_text/rich_text'),
+        meta: { title: '富文本', icon: 'form' }
+      }
+    ]
+  },
   // 多层菜单
   {
     path: '/nested',

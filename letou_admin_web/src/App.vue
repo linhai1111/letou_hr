@@ -9,3 +9,10 @@ export default {
   name: 'App'
 }
 </script>
+
+<style>
+
+.app-main{
+    overflow-y: scroll !important;
+  }
+</style>
