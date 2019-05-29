@@ -64,8 +64,6 @@
               this.$refs.myQuillEditor.quill.insertEmbed(this.addRange !== null ? this.addRange.index : 0, 'image', value, Quill.sources.USER)   // 调用编辑器的 insertEmbed 方法，插入URL
             })
           })
-
-
         }
       },
       mounted(){
