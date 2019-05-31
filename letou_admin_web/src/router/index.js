@@ -82,9 +82,9 @@ export const constantRoutes = [
         meta: { title: '兼职列表', icon: 'table' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
+        path: 'publish',
+        name: 'part_time_job_publish',
+        component: () => import('@/views/part_time_job/publish'),
         meta: { title: '发布兼职', icon: 'tree' }
       }
     ]
